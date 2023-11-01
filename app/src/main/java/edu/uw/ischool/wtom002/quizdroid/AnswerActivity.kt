@@ -1,11 +1,20 @@
 package edu.uw.ischool.wtom002.quizdroid
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_answer.*
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
 
 class AnswerActivity : AppCompatActivity() {
+
+    private lateinit var answerGivenTextView: TextView
+    private lateinit var correctAnswerTextView: TextView
+    private lateinit var correctnessTextView: TextView
+    private lateinit var nextButton: Button
+    private lateinit var finishButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_answer)

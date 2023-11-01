@@ -1,5 +1,6 @@
 package edu.uw.ischool.wtom002.quizdroid
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -21,6 +22,14 @@ class QuestionActivity : AppCompatActivity() {
 
     private var currentQuestionIndex = 0
     private var totalCorrect = 0
+
+    private lateinit var questionTextView: TextView
+    private lateinit var radioButton1: RadioButton
+    private lateinit var radioButton2: RadioButton
+    private lateinit var radioButton3: RadioButton
+    private lateinit var radioButton4: RadioButton
+    private lateinit var radioGroup: RadioGroup
+    private lateinit var submitButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
